@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+/* Home Page Starts Here */
+
+#home_page{
+    height:100vh;
+    width:100vw;
+    /* border:3px solid black; */
+    background-image: url(./Assets/Tiffin-Background.png);
+    background-size: cover;
+
+}
+#nav{
+    height:15vh;
+    /* border:2px solid black; */
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.692);
+        
+}
+
+/* #nav_one,#nav_two,#nav_three:hover{
+    /* border:2px solid red; */
+    
+/* } */ 
+
+#nav_one{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+    
+
+}
+#logo{
+    font-size:30px;
+    font-weight: 600;
+    color:white;
+}
+#nav_two{
+    flex-basis: 65%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+#nav_two>a{
+    /* color:white;  */
+    text-decoration: none;
+    font-size:17px;
+    font-weight: 500;
+    color:white;
+    transition: all 0.7ms ease 0s;
+}
+
+#nav_two>a:hover{
+    color:orange;
+}
+#nav_three{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    position:relative;
+
+}
+#cart_icon{
+    font-size: 28px;
+    color:white;
+   
+}
+#qunatity{
+    border:1px solid white;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top:23px;
+    left:84px;
+    color:black;
+    background-color: white;
+
+}
+
+#price{
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+}
+
+#header{
+    height:85vh;
+    /* border:2px solid black; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+#tagline{
+    text-align-last: center;
+    font-size:40px;
+    font-weight: 620;
+    color:white;
+
+}
+
+.explore_btn{
+    height:48px;
+    width:150px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    background-color: orange;
+}
+/* Home Page ends Here */
+
+/* popup Container page starts here */
+#main{
+    height:100vh;
+    width:100vw;
+    /* border:5px solid rgb(190, 32, 58); */
+    display:none;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin-right: 50px;
+    
+
+}
+
+#popup_container{
+width: 300px;
+/* border:2px solid green; */
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap:8px;
+padding:10px;
+background-color: white;
+box-shadow: rgba(7, 7, 7, 0.538)0px 5px 8px;
+}
+hr{
+    width:100%;
+}
+
+#popup_container>h2{
+ font-size: 18px;
+}
+
+#cart_details{
+    font-size: 15px;
+}
+
+#cart_total_items{
+    font-size: 15px;
+    width:100%;
+    text-align: start;
+}
+
+#cart_total_price{
+    font-size: 15px;
+    width:100%;
+    text-align: start;
+}
+
+#popup_container>button{
+    width:100%;
+    color:white;
+    background-color:#fa3c14;
+    border:none;
+    border-radius:5px;
+    height:28px;
+}
+
+/* popup Container page ends here */
+
+/* Menu Page starts Here */
+
+
+#menu_one{
+    height:15vh;
+    /* border:2px solid red; */
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding:25px; 
+      
+}
+#menu_one>h2{
+    font-size: 28px;
+}
+
+#menu_two{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:90px;
+    padding:20px;
+}
+
+#search_field{
+    height:40px;
+    width:220px;
+    border-radius: 10px;
+    padding:15px;
+    border:none;
+    border:1px solid rgba(177, 174, 174, 0.701);  
+}
+
+.card_container{
+    height:330px;
+    width:250px;
+    border:2px solid rgba(227, 221, 221, 0.884);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding:10px 10px;
+    box-shadow:5px 5px 10px rgb(136, 124, 124);
+}
+
+.food_img{
+    height:190px;
+    width:90%;
+    border-radius: 10px;;
+}
+
+.food_title{
+font-size:x-large;
+font-weight: 600;
+
+}
+
+.food_price{
+    color:orange;
+    font-weight: 800;
+}
+
+.food_quantity{
+    display: flex;
+    gap:10px;
+}
+
+.quantity_btns{
+    background-color:orange;
+    border: none;
+    height:30px;
+    width:28px;
+    border-radius: 2px;
+}
+
+#about_page{
+    height:100vh;
+    width:100vw;
+    display:flex;
+}
+
+#about_one{
+    flex-basis: 50%;
+    /* border:2px solid blue; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_img{
+    height:450px;
+    width:600px;
+    border-radius: 20px;
+}
+
+#about_two{
+    flex-basis: 50%;
+    /* border:2px solid blue; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px;
+}
+
+#about_us{
+    color:rgb(255, 0, 0);
+    font-size: 30px;
+    /* border:2px solid blue; */
+    width:100%;
+}
+
+.about_paras{
+    font-size: 16px;
+    
+}
+
+#testimonal{
+    /* border:2px solid red; */
+    padding:20px;
+    background-color: rgb(244, 242, 239);
+    border-left: 10px solid red;
+    border-radius: 20px ;
+}
+
+#social_media_icons{
+ display:flex ;  
+ align-items: center; 
+ justify-content: center;
+ gap:20px;
+}
+
+.icon{
+    border:2px solid red;
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px ;
+    background-color: red;
+    color:white;
+    
+}
+
+/* Feedback Page Starts here */
+
+#feedback_page{
+    /* border:2px solid black; */
+}
+
+#feedback_one{
+    /* border:2px solid blue; */
+    height:18vh;
+    color:white;
+    background-color: rgb(221, 65, 9);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+#feedback_one>h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+#feedback_two{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+#feedback_two>h2{
+    padding:20px 0px;
+    width:100%;
+    text-align: center;
+    color:red;
+
+}
+
+#feedback_two>form{
+    height:600px;
+    width:550px;
+    /* border:2px solid red; */
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:0px 15px;
+    margin:10px 0px 40px 0px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 10px;
+
+}
+
+.form_fields{
+    /* border:2px solid red; */
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    width:100%;
+    height:100px;
+    padding:0px 15px;
+    gap:7px;    
+}
+.form_fields>input{
+    height:40px;
+    border-radius: 5px;
+    padding-left:10px;
+    border:1px solid rgba(0, 0, 0, 0.33);
+    font-size: 12px;
+}
+
+.form_fields>select{
+    height:40px;
+    border-radius: 5px;
+    padding-left:10px;
+    font-size: 12px;
+    border:1px solid rgba(0, 0, 0, 0.33);
+}
+.form_fields>label{
+    height:30px;
+    padding:10px ;
+    font-size: 15px;
+}
+
+#comments{
+    /* border:2px solid greenyellow; */
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    gap: 0px;
+}
+#submit_feedback{
+width:100%;
+background-color: red;
+color:white;
+font-weight: 700;
+border:none;
+text-align: center;
+
+}
+
+#feedback_three{
+    /* border:2px solid red; */
+    height:13vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 46, 46);
+    color:white;  
+
+}
+
+
+
+

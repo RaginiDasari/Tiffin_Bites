@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffins_Bites</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Home page starts Here -->
+    <section id="home_page">
+        <nav id="nav">
+            <aside id="nav_one">
+                <h2 id="logo">TiffinBites</h2>
+            </aside>
+            <aside id="nav_two">
+                <a href="#menu_page">Menu</a>
+                <a href="#about_page">About</a>
+                <a href="#feedback_page">Feedback</a>
+            </aside>
+            <aside id="nav_three">
+                <i class="ri-shopping-cart-2-line" id="cart_icon"></i>
+                <div id="qunatity">0</div>
+                <p id="price">₹0.00</p>
+
+            </aside>
+        </nav>
+        <header id="header">
+        <h1 id="tagline"> 
+            Fuel Your Day with <br>Flavourful Tiffins
+        </h1>
+        <button class="explore_btn" id="menu_page">Explore Menu</button>
+        </header>
+    </section>
+    <!-- Home page ends Here -->
+
+    <!-- Pop Page starts Here -->
+    <main id="main">
+        <section id="popup_container">
+            <h2>Your Order Summery</h2>
+            <div id="cart_details">No items in cart</div>
+            <hr>    
+            <p id="cart_total_items">Total items :<span>0</span></p>
+            <p id="cart_total_price">Total price :₹<span>0</span></p>
+            <button id="closeBtn">Close</button>
+        </section>
+    </main>
+
+      <!-- Pop Page Ends Here -->
+
+    <!-- menu Page Starts Here -->
+    <section id="menu_page">
+        <aside id="menu_one">
+            <h2>Menu</h2>
+            <input type="text" id="search_field" placeholder="Search Tiffins...">
+        </aside>
+        <aside id="menu_two">
+            <article class="card_container" id="idli">
+                <img src="./Assets/Idli.png" alt="Idli" class="food_img" >
+                <h2 class="food_title">Idli</h2>
+                <h4 class="food_price">₹40</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="bonda">
+                <img src="./Assets/Bonda.avif" alt="Bonda" class="food_img">
+                <h2 class="food_title">Bonda</h2>
+                <h4 class="food_price">₹60</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="dosa">
+                <img src="./Assets/masala_dosa_1677504096790.jpg" alt="Dosa" class="food_img">
+                <h2 class="food_title">Masala Dosa</h2>
+                <h4 class="food_price">₹50</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="meduvada">
+                <img src="./Assets/MeduVada.png" alt="meduvada" class="food_img">
+                <h2 class="food_title">MeduVada</h2>
+                <h4 class="food_price">₹40</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="pesarattu">
+                <img src="./Assets/pesarattu.jpg" alt="pesarattu" class="food_img">
+                <h2 class="food_title">Pesarattu</h2>
+                <h4 class="food_price">₹40</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="poha">
+                <img src="./Assets/Poha.jpg" alt="poha" class="food_img">
+                <h2 class="food_title">Poha</h2>
+                <h4 class="food_price">₹30</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="pongal">
+                <img src="./Assets/Pongal.jpg" alt="pongal" class="food_img">
+                <h2 class="food_title">Pongal</h2>
+                <h4 class="food_price">₹50</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="puri">
+                <img src="./Assets/puri.webp" alt="puri" class="food_img">
+                <h2 class="food_title">Puri</h2>
+                <h4 class="food_price">₹40</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="upma">
+                <img src="./Assets/Upma.png" alt="upma" class="food_img">
+                <h2 class="food_title">Upma</h2>
+                <h4 class="food_price">₹40</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="uttapam">
+                <img src="./Assets/uttapam.jpg" alt="uttapam" class="food_img">
+                <h2 class="food_title">Uttapam</h2>
+                <h4 class="food_price">₹40</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="pulihora">
+                <img src="./Assets/pulihora.jpg" alt="pulihora" class="food_img">
+                <h2 class="food_title">Pulihora</h2>
+                <h4 class="food_price">₹50</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+            <article class="card_container" id="sambar">
+                <img src="./Assets/idli-sambar" alt="sambar" class="food_img">
+                <h2 class="food_title">Sambar_Idli</h2>
+                <h4 class="food_price">₹50</h4>
+                <div class="food_quantity">
+                    <button class="quantity_btns">-</button>
+                    <span>0</span>
+                    <button class="quantity_btns">+</button>
+                </div>
+            </article>
+
+        </aside>      
+    </section>
+    <!-- menu Page Ends Here -->
+
+    <!-- ABOUT PAGE STARTS HERE -->
+    <section id="about_page">
+        <aside id="about_one">
+            <img src="./Assets/Tiffin-Background.png" alt="AboutImg" id="about_img">
+        </aside>
+        <aside id="about_two">
+            <h2 id="about_us">About Us</h2>
+            <p class="about_paras"><b>Welcome to TiffinBites,</b> your go-to destination for authentic South Indian flavors in the heart of Hyderabad! We serve delicious home-style meals made fresh every day.</p>
+            <p class="about_paras"><b>Our Story:</b> Born out of a love for traditional food, TiffinBites began as a small family-run venture aiming to bring homely and hygienic tiffin to busy working professionals and students.
+            </p>
+            <p class="about_paras"><b>Timings: 7:00 AM - 10:00 PM (All days)</b></p>
+            <p class="about_paras"><b>Location: Chaitanyapuri, Hyderabad, Telangana, India</b></p>
+            <p id="testimonal" class="about_paras">“We care about your hunger as much as we care about taste. One bite at a time, we make your day better!”</p>
+            <article id="social_media_icons">
+                <div class="icon">
+                    <i class="ri-facebook-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-instagram-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </article>
+        </aside>
+        
+    </section>
+    <!-- ABOUT PAGE ENDS HERE -->
+
+    <!-- FEEDBACK PAGE STARTS HERE -->
+    <section id="feedback_page">
+        <aside id="feedback_one">
+            <h3>Tiffin Bites</h3>
+            <p>Your feedback helps us to serve you better!</p>
+        </aside>
+        <aside id="feedback_two">
+            <h2>Feedback Form</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                 <input type="hidden" name= "access_key" value="e9a1be0e-e9a7-4aee-8303-ea405c5eca6b">
+                <div class="form_fields">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form_fields">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form_fields">
+                    <label for="ratings">Ratings</label>
+                    <select name="ratings" id="ratings">
+                        <option disabled selected>Select option</option>
+                        <option >5 (Excellent)</option>
+                        <option >4 (Good)</option>
+                        <option >3 (Average)</option>
+                        <option >2 (Poor)</option>
+                        <option >1 (Bad)</option>
+                    </select>
+                </div>
+                <div class="form_fields">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" placeholder="Write your feedback here..."></textarea>
+                </div>
+                <div class="form_fields">
+                    <input type="submit" value="Submit Feedback" id="submit_feedback">
+                </div>
+            </form>
+        </aside>
+        <aside id="feedback_three">
+            <p>&copy;Tiffin Bites | All Rights Reserved</p>
+        </aside>
+    </section>
+   
+
+    <!-- FEEDBACK PAGE ENDS HERE -->
+
+    <script src="./script.js"></script>
+      
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- to submit the feedback which has entered into the form and that data will sent to our mail so that .
+     here we use a website call called the web3forms.and  goto the website and enter a email in it and generate a key and paste in your  -->
